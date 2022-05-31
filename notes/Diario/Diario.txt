@@ -1,0 +1,371 @@
+1 - Criando o Player
+	1.1 - Importar a sprite do player - FEITO
+	1.2 - Criar o objeto do player e atribuir sprite - FEITO
+	1.3 - Mover o Player com WASD dentro do STEP - FEITO
+	1.4 - Melhorar o codigo de movimentação - FEITO
+	
+2 - Ajuste de dimensões da room, view e viewport 
+	2.1 - Criar uma viewport e camera para o jogo - FEITO
+	2.2 - Ajustar as dimensões para a view ser grande e o viewport menor - FEITO
+	
+3 - Atirando!
+	3.1 - Importar as sprites do tiro do player - FEITO
+	3.2 - Criando o objeto do tiro do player - FEITO
+	3.3 - Fazer o tiro ir para cima - FEITO
+	3.4 - Fazer  o jogador atirar ao apertar espaço - FEITO
+	3.5 - Criar um efeito para o tiro - FEITO
+		3.5.1 - Fazer ele ser criado grande e diminuir depois de determinado tempo - FEITO
+	3.6 - Destruir os tiros quando sairem da tela - FEITO
+	
+4 - Criar o primeiro inimigo
+	4.1 - Importar as sprites - FEITO
+	4.2 - Criar o Objeto - FEITO
+	4.3 - Fazer ele ir para baixo - FEITO
+	
+5 - Fazer o Inimigo 01 atirar
+	5.1 - Importar sprite do tiro - FEITO
+	5.2 - Criar objeto do tiro - FEITO
+	5.3 - Fazer o tiro ir para baixo - FEITO
+	5.4 - Atirar de fato - FEITO
+	5.5 Dando o efeito no tiro - FEITO
+	
+
+(Criação de métodos)
+
+6 - Fazer o tiro do player colidir com o inimigo
+	6.1 - Se destruir ao acertar o inimigo - FEITO
+	6.2 - Criar o impacto do tiro do player - FEITO
+	6.3 - Fazer o impacto do tiro desaparecer no final da animação - FEITO
+	6.4 - Fazer o tiro não criar o impacto quando sair da room - FEITO
+	
+7 - Fazer o tiro do inimigo acertar o player e ser destruido
+	7.1 - Fazer o tiro não criar o impacto quando sair da room - FEITO
+	
+8 - Destruir o inimigo quando ele levar um tiro
+	8.1 - Fazer o tiro do player também destruir o inimigo que colidir com ele - FEITO
+	8.2 - Fazer com que ao ser destruido o inimigo crie uma explosão - FEITO
+		8.2.1 - Criar a sprite da explosão - FEITO
+		8.2.2 - Criar o objeto explosão - FEITO
+		8.2.3 - Fazer o inimigo instanciar a explosão ao morrer - FEITO
+		8.2.4 - Fazer a explosão se destruir no final da animação - FEITO
+		
+9 - Pequenos ajustes - Parte 1 - FEITO
+	9.1 - Fazer o inimigo ser destruido ao sair da tela - FEITO
+	9.2 - Aprimorar o background - FEITO
+	9.3 - Aprimorar o efeito do tiro 
+		9.3.1 - Criar a sprite do brilho - FEITO
+		9.3.2 - Criar o draw event - FEITO
+		9.3.3 - Se desenhar - FEITO
+		9.3.4 - Desenhar o brilho - FEITO
+		9.3.5 - Alterar como a gpu processa a mistura de imagens - FEITO
+		9.3.6 - Usar o lerp para diminuir o tamanho - FEITO
+		9.3.7 - Criar a variável cores para ele mudar de cor - FEITO
+	9.4  - Aprimorar o efeito das explosões
+		9.4.1 - Criar o Draw event - FEITO
+		9.4.2 - Se desenhar - FEITO
+		9.4.3 - ME desenhar um pouco maior - FEITO
+		9.4.4 - Alterar como a gpu processa a mistura de cores -  FEITO
+		9.4.5 - Criar a variável de cores - FEITO
+		
+	
+10 - Criar o background do jogo - FEITO
+
+	
+11 - Criando o segundo inimigo
+	11.1 - Importar a sprite do inimigo 2 - FEITO
+	11.2 - Criar o objeto do inimigo 2 - FEITO
+	11.3 - Fazer o inimigo 2 herdar comportamentos do inimigo 1 - FEITO
+	11.4 - Fazer ele mudar de direção ao chegar (mais ou menos) no meio da room -
+		11.4.1 - Checando de que lado da room eu estou - FEITO
+		11.4.2 - Fazer ele mudar de direção - FEITO
+		11.4.3 - Fazer ele mudar de direção SE ele já passou de 1/3 da tela - FEITO
+		11.4.4 - Faze ele mudar de direção apenas UMA VEZ -  FEITO
+	11.5 - Fazendo o inimigo criar o próprio tiro
+		11.5.1 - Criar a função atirando do inimigo 02 - FEITO
+
+12 - Criando o segundo tiro do inimigo
+	12.1 - Importando a sprite - FEITO
+	12.2 - Criando o objeto - FEITO
+	12.3 - Fazendo ele ser filho do tiro1 - FEITO
+	12.4 - Iniciar indo na direção do player _ FEITO
+	12.5 - Apontando para a difreção do player - FEITO
+		12.5.1 - Fazer ela ganhar 90 graus - FEITO
+	12.6 - Indo para a direção do player APENAS se o player existir - FEITO
+	
+13 - Criação procedural dos inimigos
+	13.1 - Fazer com que o objeto control crie inimigos de tempo em tempo -
+		13.1.1 - Fazer com que a posição X e Y dos inimigos criados seja aleatória - FEITO
+	13.2 - Criando inimigos diferentes com base no level do jogo - FEITO
+	13.3 - Criar ONDAS de inimigos - FEITO
+	13.4 - Criar as ondas APENAS se não tiver mais inimigos no jogo - FEITO
+	13.5 - Criar a quantidade de inimigos com base no level - FEITO
+	13.6 - Impedir que inimigos sejam criados no mesmo lugar - FEITO
+
+
+14 - Criar o objeto controlador do jogo
+	14.1 - Ganhando pontos ao destrui o inimigo
+	
+	
+15 - Criando o sistema de pontos -
+	15.1 - Iniciando a variável pontos - FEITO
+	15.2 - Ganhando pontos ao destruir os inimigos - FEITO
+	15.3 - Rodar o metodo de ganhar pontos APENAS se a instância do objeto control existir - FEITO
+	15.4 - Fazer com que inimigos diferentes me façam ganhar pontos diferentes - FEITO
+	15.5 - Criar uma variável nos inimigos chamada pontos e ela vai ter quantos pontos eles dão - FEITO
+	
+16- Criar o sistema de level -
+	16.1 - Iniciar a variável level - FEITO
+	16.2 - Exibir o level - FEITO
+	16.3 - Ganhar level quando eu ganhar um determinado número de pontos - FEITO
+	16.4 - Dobrando o valor do próximo level sempre que eu ganhar um level - FEITO
+	
+17 - Deixar o tiro do player "automático" - FEITO
+	17.1 - Criando o evento para o tiro - FEITO
+	
+18 - Danr leveis para os tiros do player -
+	18.1 - Criar o sistema de leveis - FEITO
+	18.2 - Criar o sistema de debug dos leveis - FEITO
+	18.3 - Fazer o player dar o segundo tiro no level 2 - FEITO
+	
+	
+19 - Criar o segundo tiro do player -
+	19.1 - Importar a sprite e criar o objeto do tiro 2 - FEITO
+	19.2 - Colocar o tiro 2 como filho do tiro 1 - FEITO
+	19.3 - Ajustar o efeito do tiro 2 - FEITO
+	19.4 - Criar dois tiros por vez, um em cada asa - FEITO
+	19.5 - Fazer o tiro mudar de direção
+		19.5.1 - Fazer o tiro ganhar uma direção - FEITO
+		19.5.2 - FAzer o tiro inverter a direção horizontal - FEITO
+	19.6 - Criar o terceiro level do tiro - FEITO
+		19.6.1 - Criar o tiro 1 e dois tiros 2 - FEITO
+	19.7 - Criar o quarto level do tiro - FEITO
+	19.8 - Criar o quinto level do tiro - FEITO
+	
+20 - POWER UP - FEITO
+	20.1 - Criando a sprite do power up - FEITO
+	20.2 - Criar o objeto do power up - FEITO
+	20.3 - Cirar a chance de cada power up - FEITO
+	20.4 - Criar o método levle up no player - FEITO
+	20.5 - Fazer o item colidir com o player e dar o power up para ele - FEITO
+	20.6 - Destruir o item ao colidir com o player -  FEITO
+	20.7 - Criar o impacto do tiro ao ser destruido - FEITO
+	20.8 - Fazer os inimigos terem uam chance de dropar o power up - FEITO
+	20.9 - Fazer o item se mover - FEITO
+	20.10 - Dar um efeito a mais nele - FEITO
+		20.10.1 - Escolher a cor com base no tipo de power up - FEITO
+	20.11 - Impedir que o item saia da tela - FEITO
+	20.12- Fazer o power up sumir sozinho - FEITO
+	
+21 - Escudo do player
+	21.1 - Criar a sprite e o objeto - FEITO
+	21.2 - Fazer o player criar o escudo ao apertar a letra E - 
+	12.3 - Criar uma layer para o escudo - FEITO
+	21.5- Fazer o escudo ficar na mesma posição que o player - FEITO
+		21.5.1 - Corrigir o delay no movimento - FEITO
+	21.6 - Destruir os tiros e os inimigos com o escudo - FEITO
+	21.7 - Deixar o escudo um pouco maior - FEITO
+	21.8 - Animar o escudo -
+		21.8.1 - Parar a animação no final dela - FEITO
+		21.8.2 - Depois de um tempo voltar a imagem - 
+			21.8.2.1 - Ao final da animação ativar um alarme em 2 segundos - FEITO
+			21.8.2.2 - Ao executar o alarme ele deve voltar uma imagem - FEITO
+			21.8.2.3 - Se destruir no proximo alarme ao chegar no image_index 0 - FEITO
+	21.9 - Melhorar o efeito do escudo
+		21.9.1 - Efeito de transparencia - FEITO
+		21.9.2 - Blendmode - FEITO
+	21.10 - Limitar a quantidade de escudos do player - 
+		21.10.1 - Criar a variável da quantidade de escudos - FEITO
+		21.10.2 - Fazer o player só poder criar escudos SE a quantidade de escudos for maior do que 0 - FEITO
+	21.11 - Exibir os escudos apra o usuário - FEITO
+		
+
+22 - Ajustes gerais
+	22.1 - Arrumar as mascaras de colisão - FEITO
+	22.2 - Dar colisão entre o player e os inimigos - FEITO
+	22.3 - Ajustar a transparência do power up - FEITO
+	22.4 - Melhorar a dispersão dos inimigos - FEITO
+	22.5 - Randomizar o jogo - FEITO
+	22.6 - Impedir o player de sair da tela - FEITO
+	22.7 - Fazer os inimigos droparam o item depois de certa posição - FEITO
+	22.8 - Melhorar o sistema de Up - FEITO
+	22.9 - Ganhar pontos caso o player pegue o power up do tiro e já esteja no level máximo - FEITO
+	22.10 - Impedir que o player leve dano quando estiver com o escudo - FEITO
+		22.10.1 - Fazer o escudo avisar ao alvo dele que o my_sheild do alvo dele é noone - FEITO
+	22.1 - Impedir que o player crie mais de um escudo por vez - FEITO
+	
+23 - Fazer o player morrer 
+	23.1 - Dar vida para o player - FEITO
+	23.2 - Cirar o método perde hp - FEITO
+	23.3 - Fazer ele morrer SE a vida for menor do que ou igual a 0 - FEITO
+	23.4 - Fazer o player criar a explosão - FEITO
+	23.5 - Exibir a vida do player - FEITO
+	23.6 - Fazer o player perder vida ao trombar com o inimigo - FEITO
+	23.7 - Criar uma tela de game-over quando o jogador perder - FEITO
+		23.7.1 - Criar uma sequence de game over - FEITO
+		23.7.2 - Intanciar a sequence na room quando o player morrer - FEITO
+			23.7.2.1 - Checar se o player existe pelo objeto control - FEITO
+			23.7.2.2 - SE o player não existir então eu crio a minha sequence - FEITO
+		23.7.3 - Reiniciar ao apertar ENTER - FEITO
+		
+24 - Screenshake!
+	24.1 - Criar um objeto para fazer o screenshake - FEITO
+	24.2 - Fazer a tela tremer - FEITO
+	24.3 - Enfraquecer o screenshake - FEITO
+	24.4 - Destruir o screenshake depois de um tempo - FEITO
+	24.5 - Garantir que ao se destruir a posição do viewport volte ao original - FEITO
+	24.6 - Criar o screenshake sempre que um inimigo for destruido - FEITO
+	24.7 - Criar uma função para que qualquer um possa criar o screensahke e definir a força dele - FEITO
+	24.8 - Criar o screenshake do player - FEITO
+	
+
+25 - BOSS!!
+	25.1 - Importar as sprites do boss - FEITO
+	25.2 - Criar o objeto do boss - FEITO
+	25.3 - Definir os estados do boss - 
+	25.4 - Criar o primeiro estado do boss (criar o tiro 2 enquanto fica parado) - FEITO
+		25.4.1 - Fazer o boss criar o tiro 2 do canhão do meio - FEITO
+		25.4.2 - Criar um intervalo entre os tiros do boss - FEITO
+		26.4.3 - Criar um método do estado 1 - FEITO
+		26.4.4 - Fazer ele trocar de estado depois de um tempo - FEITO
+	25.5 - Criar o segundo estado do boss
+		25.5.1 - Fazer o boss dar o tiro 1 dos canhões laterais ao mesmo tempo - FEITO
+		25.5.2 - Criar o intervalo dos tiros -  FEITO
+		25.5.3 - FAzer o boss se mover para os lados - FEITO
+		25.5.5 - Criar o metodo para o estado 2 - FEITO
+	25.6 - Criar o terceiro estado do boss -
+		25.6.1 -  Criar o tiro 2 do canhão central no dobro do tempo da espera - FEITO
+		25.6.2 - Criar o tiro 1 dos canhões menores - FEITO
+		25.6.3 - Criar o tiro 1 e 2 em tempos diferentes - FEITO
+		25.6.4 - Criar o método do estado 3 - FEITO
+	25.7 - Criar a vida do boss
+		26.7.1 - Iniciando a variável da vida -  FEITO
+		26.7.2 - Exibir a vida do boss - FEITO
+		26.7.3 - Fazer o boss levar tiro - FEITO
+	25.8 - Criar o quarto estado do boss -
+		25.8.1 - Importar a sprite - FEITO
+		25.8.2 - Fazer com que o boss tenha a sprite escura no quarto estado - FEITO
+		25.8.3 - Fazer o boss não levar dano no estado 4 - 
+		25.8.4 - Fazer o boss ter a sprite original nos demais estados - FEITO
+		25.8.5 - Criar o objeto minion do boss - FEITO
+		25.8.6 - Criar o tiro do minion do boss - FEITO
+		25.8.7 - Fazer o minion atirar - FEITO
+		25.8.8 - Fazer o tiro do minion ir na direção do boss - FEITO
+		25.8.9 - Fazer o tiro do minion recuperar 5 de vida do boss - FEITO
+		25.8.10 - Fazer os minions iniciarem transparentes e depois ficarem visiveis - FEITO
+		25.8.11 - Fazer os minions levarem tiros (perdendo 1 de vida) - FEITO
+		25.8.12 - Dar 10 de vida para os minions - Feito
+		25.8.13 - Fazer o minion morrer ao chegar a 0 de hp - FEITO
+		25.8.14 - Criar a explosãoa o morrer - FEITO
+		25.8.15 - Melhorar o feedback para o player - 
+			25.8.15.1 - Fazer ele ficar transparente conforme leva tiro - FEITO
+			25.8.15.2 - Fazer o valor do aumento escala subir -  FEITO
+		25.8.16 - Alterar os efeitos do minion - FEITO
+			25.8.16.1 - Fazer a escala aumentar e diminuir - FEITO
+		25.8.16 - Fazer o boss criar os minions ao entrar no estado 4 -
+			25.8.16.1 - Criar os minions no angulo correto - FEITO
+			25.8.16.2 - Fazer com que o minion cheque se foi criado em cima de outro minion, se sim ele muda o Y dele em -128 - FEITO
+			25.8.16.3 - FAzer com que o boss só crie uma vez os minions no estado 4 - FEITO
+			25.8.16.4 - Fazer ele poder criar minion ao sair do estado 4 - FEITO
+			25.8.16.5 - Fazer com que ele possa chegar no estado 4 SE a vida atual for menor do que ou igual a metade da vida total - FEITO
+			25.8.16.6 - Fazer os tiros dos minions seguir o boss no step - FEITO
+		25.8.17 - Criar o método do estado 4 - FEITO
+		25.8.18 - Fazer ele ir lentamente para o meio da tela - FEITO
+	25.9 - Criar o método de troca de estado - FEITO
+	
+	
+26 - Animação da chegada do boss - 960 512
+	26.1 - Importar a sprite - FEITO
+	26.2 - Criando a animação -  FEITO
+	26.3 - Destruir a sequence ao final da animação - FEITO
+	26.4 - Criar o boss depois da sequencia - FEITO
+	
+27 - Animação da morte do boss
+	27.1 - Deixar a animação com 10 segundos - FEITO
+	27.2 - Criar várias explosões pelo boss - FEITO 
+	27.3 - Fazer o boss cair da tela até sumir - FEITO
+	27.4 - Fazer o boss criar a animação de morrer quando ele for destruido - FEITO
+	27.5 - Criar a animação na posição correta - FEITO
+	
+28 - Fazer o control criar o boss quando ele chegar no level 10
+	28.1 - Criar inimigos se eu ainda não estiver no lvl 10 - FEITO
+	28.2 - Criar o boss se eu estou no level 10 - FEITO
+	29.3 - Garantir que eu só vou criar o boss uma única vez - FEITO
+	
+	
+29 - Criar a animação de termino de level do player
+	29.1 - Cria a animação - FEITO
+	29.2 - Quando a animação de morte do boss acabar, cria a animação do player - FEITO
+		29.2.1 - Criar a função que executa a sequência do player - FEITO
+	29.3 - Destruir o player e garantir que o obj control NÃO vai achar que o jogador perdeu
+		29.3.1 - Impedir que o DEstroy do player seja executado - FEITO
+		29.3.2 - Criar uma variável de controle para o control para impedir que ele crie o game over - FEITO
+	29.4 - Fazer ele criar a tensição para a tela inicial -
+		29.4.1 - Criar a função da transição - FEITO
+		
+30 - Criar a tela inicial do jogo
+	30.1 - Criar a room da tela inicial - FEITO
+	30.2 - Criar os botões - 
+		30.2.1 - Fazer com que a cor do botão mude se o mouse estiver por cima dele - FEITO
+		30.2.2 - Fazer o botão voltar a cor original quando o mouse sai dele - FEITO
+		30.2.3 - Desenhar o texto no botão
+			30.2.3.1 - Desenhar a fonte centralizada - FEITO
+			30.2.3.2 - Permitir que o texto seja personalizado - FEITO
+	30.3 - Ao clicar no botão, instanciar o objeto transição com o destino desejado - FEITO
+	30.4 - Fazer que ao morrer e apertar enter o jogador volte para a tela inicial - FEITO
+	
+31 - Criar a transição -
+	31.1 - Criar o objeto transição - FEITO
+	31.2 - Fazer ele escurecer a tela - 
+		31.2.1 - Fazer ele desenhar primeiro transparente e depois escurecer - FEITO
+		31.2.2 - SE o alpha for menor do que 1, então o alpha aumenta -  FEITO
+	31.3 - Fazer ele mudar de room depois que a tela esta totalmente escura - FEITO
+	31.4 - Fazer ele deixar a tela clara novamente - FEITO
+		31.4.1 - Deixar a tela clara ao trocar de room - FEITO
+		31.4.2 - Avisar quando eu troquei de room - FEITO
+	32.5 - Se eu troqueid e room e o alpha for menor do que 0, eu me mato - FEITO
+	
+		
+32 - Criar a tela de pontuação - FEITO
+	32.1 - Criar um sistema de pontos que guarda as pontuações - FEITO
+		32.1.1 - Criar uma room para inicializar as variáveis globais - FEITO
+		32.1.2 - Garantir que o viewport da room inicializar esta correto - FEITO
+		32.1.3 - Inicializar as variáveis globais - FEITO
+		32.1.4 - Ir para a próxima room - FEITO
+	32.2 - DEbug para ver as variáveis globais - FEITO
+	32.3 - Salvar os pontos na variável global de max pontos SE os pontos forem maiores do que o max pontos - FEITO
+		32.3.1 - Quando o jogo terminar (a partida) checar se os pontos são maiores do que max pontos e se sim, passar os pontos para a variável global - FEITO
+	32.4 - Sempre que um inimigo for morto ele vai aumentar em 1 a variável de inimigos mortos - FEITO
+	32.5 - Sempre que o player morrer ele incrementaa variável de mortes em 1 - FEITO
+	32.6 - Ganhar pontos ao matar o boss - FEITO
+	32.7 - Garantir que o objeto control vai atualizar os pontos - FEITO
+	32.8 - Exibir os pontos na tela de pontos - FEITO
+	32.9 - Criar um botão para voltar - FEITO
+	33.10 - FAzer na hora de exibição ele começar com 0 pontos e aumentar até a maior pontuação - FEITO
+	
+33 - Ajustes gerais 2.0
+	33.1 - Garantir que o jogo é aleatório - FEITO
+	33.2 - Ajustar o nome do jogo - FEITO
+	
+34 - Criar os sons do jogo 
+	34.1 - Importar os sons do jogo - FEITO
+	34.2 - Criar o som de explosão no objeto - FEITO
+	34.3 - Criar o som do tiro sempre que o player atirar - FEITO
+	34.5 - Criando o som do tiro sempre que o boss atirar - FEITO
+	34.6 - Criar o som do escudo do player subindo e destruindo - FEITO
+	34.7 - Criar o som lose quando aparecer a tela de game over - FEITO
+	34.8 - Colocar o two tone quando o tiro bater no escudo do player - FEITO
+	34.9 - Tocar a música do jogo quando o level iniciar - FEITO
+		34.9.1 - Parar de tocar as músicas quando eu sair do level - FEITO
+	34.10 - Tocar a boss fight quando ela inciar -
+		34.10.1 - Parar de tocar a música do level quando o boss inciar -
+		32.10.2 - TOcar a música da boss fight - FEITO
+		
+
+35 - Polir o jogo
+	35.1 - Tirar todos os debugs do jogo - FEITO
+	35.2 - Ajustar a exibição dos pontos - FEITO
+	35.3 - Testar o jogo!
+
+	
+	
+	
