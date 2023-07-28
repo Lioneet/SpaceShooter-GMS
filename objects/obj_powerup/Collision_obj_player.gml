@@ -5,3 +5,4 @@
 other.level_up(chance);
 
 instance_destroy();
+instance_create_layer(x, y, "Tiro", obj_impacto_tiro);

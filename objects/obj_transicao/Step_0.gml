@@ -21,4 +21,5 @@ if (alpha >= 1 && !room_trocada)
 if (alpha <= 0)
 {
 	instance_destroy();	
+	instance_create_layer(x,y, "Player", obj_multiplayer);
 }

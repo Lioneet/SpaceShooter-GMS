@@ -13,7 +13,15 @@ if (hp > 1)
 }
 else
 {
-	instance_destroy();		
+	instance_destroy();	
+	//Criando a explosão
+	instance_create_layer(x,y, layer, obj_explosao_inimigo);
+
+	//Screenshake
+	screenshake(10);
+
+	//Aumentando a variavel global
+	global.total_inimigos++;
 }
 
 

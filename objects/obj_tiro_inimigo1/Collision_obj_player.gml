@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 instance_destroy();
+instance_create_layer(x,y, "Tiro", obj_impacto_tiro);
 
 //Tirando vida do player
 other.perde_hp();

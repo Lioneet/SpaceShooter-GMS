@@ -9,7 +9,7 @@ boss_criado = false;
 endgame = false;
 
 //Randomizando o jogo
-randomize();
+//randomize();
 
 //Iniciando o sistema de pontos
 pontos = 0;

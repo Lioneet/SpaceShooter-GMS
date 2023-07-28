@@ -10,7 +10,11 @@ if (image_index > 0)
 }
 else
 {
-	instance_destroy();		
+	instance_destroy();	
+	//Avisando meu alvo (que é o player) que o escudo dele não existe mais
+	alvo.my_shield = noone;
+	//Som do escudo
+	audio_play_sound(sfx_shieldDown, 1, 0);
 }
 
 alarm[0] = room_speed;

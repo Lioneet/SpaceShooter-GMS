@@ -4,6 +4,12 @@
 //Tiro CD - 10% - Limite = 20 // 45
 //Level Tiro - 1 - Limite = 5 // 10
 
+//PLayer 0 começa na parte de baixo da room na esquerda
+if (player_id == 0) x = 544;
+else if (player_id == 1) x = 1312
+
+y = 928;
+//Player 1 começa na aprte de baixo da room na direita
 
 velocidade = 5;
 
@@ -21,7 +27,8 @@ my_shield = noone;
 //Iniciando método
 atirando = function()
 {
-	var fire = keyboard_check(vk_space);
+	var _controles = rollback_get_input();
+	var fire = _controles.space;
 	var y_tiro = y - sprite_height / 3;
 	if (fire && alarm[0] == -1)
 	{		
@@ -173,6 +180,7 @@ perde_hp = function()
 		else //Eu morri ao levar o tiro
 		{
 			instance_destroy();
+			morrendo();
 			screenshake(25);
 		}
 	}
@@ -181,7 +189,8 @@ perde_hp = function()
 //Cria escudo
 cria_shield = function()
 {
-	var shield = keyboard_check_pressed(ord("E"));
+	var _controles = rollback_get_input();
+	var shield = _controles.E_pressed;
 	if (shield && shield_count > 0 && !my_shield)
 	{
 			instance_create_layer(x, y, "Shield", obj_shield);
@@ -195,4 +204,14 @@ cria_shield = function()
 			//Diminuindo a quantidade de escudos
 			shield_count--;
 }
+}
+
+morrendo = function()
+{
+	//Criando o efeito de explosão
+	instance_create_layer(x, y,"Player", obj_explosao_inimigo);
+
+
+	//Aumentando a variavel global de mortes
+	global.total_mortes++;
 }

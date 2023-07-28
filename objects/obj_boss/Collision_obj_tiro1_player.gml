@@ -11,6 +11,7 @@ if (estado_atual != "estado 4")
 	else
 	{
 		instance_destroy();
+		morrendo();
 	}
 
 	instance_destroy(other);
